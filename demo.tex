@@ -29,26 +29,65 @@
 \section{Contexto}
 
 \begin{frame}[fragile]{Contexto}
- - Las estucturas alargadas aparecen continuamente en distintas escalas, 
+\begin{itemize}
+    \item Las estucturas alargadas aparecen continuamente en distintas escalas
+    \item En distintas formas: Con y Sin Ciclo
+    \begin{itemize}
+        \item Con Ciclo: Reticulo
+        \item Sin Ciclo: Neurona
+    \end{itemize}
+\end{itemize}
+\begin{center}
+    \includegraphics[width=\textwidth,height=0.5\textheight]{nr120.jpg}
+        \end{center}
+\end{frame}
 
- - En distintas formas: 
+\begin{frame}[fragile]{Contexto}
 
- - Se busca caracterizar mediante la medici\'on de par\'ametros como el largo, ancho, \'angulo predominante
+\begin{center}
+    \includegraphics[width=\textwidth]{F1-large.jpg}
+        \end{center}
+\end{frame}
 
- - Existen distintos enfoques
 
- - Restricciones de 
+\begin{frame}[fragile]{Contexto}
+\begin{itemize}
+    \item Se busca caracterizar mediante la medici\'on de par\'ametros como el largo, ancho, \'angulo predominante, la polaridad.
+    \item Existen diversos enfoques:
+    \begin{itemize}
+        \item An\'alisis de imagen para determinar una red
+        \item An\'alisis de imagen para determinar direccionalidad predominante
+        \item An\'alisis de imagen para extraer cada uno de los filamentos que componen lo observado
+    \end{itemize}
+    \item Restricciones del instrumento de observaci\'on
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Microt\'ubulos}
+\begin{itemize}
+    \item Investigaciones del estado del arte involucran demasiados par\'ametros
+\end{itemize}
+
+\begin{center}
+    \includegraphics[width=\textwidth]{microtubulos_MAX.png}
+        \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Ejemplo base}
+\begin{center}
+    \includegraphics[width=\textwidth,height=0.5\textheight]{test.png}
+        \end{center}
 \end{frame}
 
 \section{Preguntas de Investigaci\'on}
 
 \begin{frame}{Investigaci\'on}
-	Existiendo información a Priori, la que identifica ciertos comportamientos de lo observado (ej: actina no se pega), es posible
- determinar correctamente la cantidad de objetos (estructuras alargadas) y sus caracteristicas con distintos criterios (geometricos comunmente)
+	Existiendo información a Priori, la que identifica ciertos comportamientos de lo observado (ej: actina no se pega) y comenzando el an\'alisis utilizando im\'agenes con fluorescencia de microfilamentos de celulas eucariotas:
 	\begin{itemize}
 		\item Cuantos objetos se observan, y que caracter\'isticas/propiedades presentan.
-		\item Cual de estas car
-		\item \textsc{allsmallcaps}
+		\item Cual de estas caracter\'isticas es m\'as relevante.
+		\item Cual es el costo computacional de una soluci\'on de este tipo.
+		\item Cuales son los aspectos relevantes para lograr una generalizaci\'on a otras estructuras alargadas.
 	\end{itemize}
 \end{frame}
 
@@ -56,7 +95,11 @@
 
 \begin{frame}[fragile]{Hip\'otesis}
 
-Un enfoque basado en grafos permite construir
+Un enfoque basado en grafos  permite construir una representaci\'on con mayor carga de informaci\'on dados los multi-criterios.
+
+\begin{itemize}
+    \item Objetivo 1: Desarrollar un algoritmo que permita incorporar los criterios mencionados previamente. 
+\end{itemize}
 
 \end{frame}
 
@@ -70,9 +113,9 @@ Un enfoque basado en grafos permite construir
   \end{itemize}
 \end{frame}
 
-\begin{frame}{References}
-  Some references to showcase [allowframebreaks] \cite{knuth92,ConcreteMath,Simpson,Er01,greenwade93}
-\end{frame}
+%\begin{frame}{References}
+%  Some references to showcase [allowframebreaks] %\cite{knuth92,ConcreteMath,Simpson,Er01,greenwade93}
+%\end{frame}
 
 
 {\setbeamercolor{palette primary}{fg=black, bg=yellow}
